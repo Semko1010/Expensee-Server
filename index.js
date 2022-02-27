@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
-const PORT = 3030;
+const PORT = process.env.PORT || 3030;
 app.use(express.json({ limit: "16mb" }));
 
 //import functions
