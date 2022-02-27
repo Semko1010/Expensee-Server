@@ -59,5 +59,8 @@ app.get("/api/expensee/users/allUsers", (req, res) => {
 		res.send(userImage);
 	});
 });
+app.get("/", (req, res) => {
+	res.send("Works");
+});
 
 app.listen(PORT, () => console.log("Server runs on Port:", PORT));
